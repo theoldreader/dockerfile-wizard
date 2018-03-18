@@ -10,7 +10,7 @@ if [ ! -e $RUBY_VERSION_NUM ] ; then
     make -j4 && \
     make install && \
     ruby -v && \
-    gem install bundler"
+    gem install bundler --no-ri --no-rdoc"
 fi
 
 if [ ! -e $NODE_VERSION_NUM ] ; then
